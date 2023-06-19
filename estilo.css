@@ -1,0 +1,339 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(224, 84, 41);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.barraSuperior {
+    padding: 1em 7em;
+}
+
+.primeraFila {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 3em 0;
+}
+.icono {
+    background-color: rgb(40, 240, 67);
+    border-radius: 5px;
+    margin: .7em .3em;
+    padding: .6em .7em;
+}
+
+.boton {
+    background-color: rgb(40, 240, 67);
+    border-radius: 5px;
+    margin: .7em .3em;
+    padding: .6em .7em;
+    right: 45%;
+}
+
+.redes {
+    display: flex;
+    flex-direction: left;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.nombre {
+    font-family: 'Dancing Script', cursive;
+    color: rgb(81, 91, 238);
+    font-size: 4em;
+    display:flex;
+    position: absolute;
+    top: 5px;
+    left: 35.9%;
+}
+
+.menu {
+    display: flex;     
+}
+
+.enlace:link, enlace:visited, enlace:active {
+    color:rgb(0, 0, 0);
+    text-decoration: solid;
+ }
+
+#desplegable {
+    display: flex;
+    flex-direction: center;
+    flex-wrap: row;
+    text-align: left;
+    justify-content: space-between;
+    max-width: 755px;
+    margin: auto;
+    position: relative;
+    top: -6em;
+    opacity: 0;
+    transition: all .7s;
+}
+
+#desplegar {
+    margin:auto;
+    position: relative;
+    top: -2em;
+}
+
+#contraer {
+    position: relative;
+    top: -1.5em;
+    margin: auto;
+    display: none;
+}
+
+#contraer:hover, #desplegar:hover {
+    -webkit-box-shadow:0px 0px 20px 6px rgba(33, 11, 94, 0.51);
+    -moz-box-shadow: 0px 0px 20px 6px rgba(232,63,63,0.51);
+    box-shadow: 0px 0px 20px 6px rgba(232,63,63,0.51);
+    transition: .2s;
+}
+
+.opciones {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Gasoek One', sans-serif;
+    font-family: 'Tilt Prism', cursive;
+    font-weight: 600;
+    color:rgb(201, 64, 82);
+    padding: 0 .2em ;
+    transition: .2s;
+}
+
+.opciones:hover {
+    -webkit-box-shadow:0px 0px 20px 6px rgba(232,63,63,0.51);
+    -moz-box-shadow: 0px 0px 20px 6px rgba(232,63,63,0.51);
+    box-shadow: 0px 0px 20px 6px rgba(232,63,63,0.51);
+    color:rgb(201, 64, 82);
+    background-color: #3b89e277;
+    padding: 0 .2em ;
+    border-radius: 15px;
+    transition: .2s;
+}
+
+.cuerpo {
+    background-image: url(Fondo/persona\ corriendo\ agua.jpg);
+    min-height: 70vw;
+    display: block;
+}
+
+/* ++++++++++++ PIE DE PAGINA ++++++++++++++++*/
+
+.footer {
+    background-color: rgb(253, 253, 253);
+    margin-top:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: .5px;
+}
+
+
+.textoFooter {
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    color:rgb(241, 130, 25);
+    margin: .1em 0 0;
+    
+}
+
+.footerIzquierdo {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 0;
+}
+
+.footerDerecho {
+    text-align: right;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin: auto 0;
+}
+
+/* ++++++ SLOGAN ++++++ */
+
+.divSlogan {
+    padding: 5em 0 0 8em;
+} 
+
+.slogan {
+    font-family: 'Rock 3D', cursive;
+    font-size: 2.5em;
+    color: #0921f8;
+}
+
+.azul {
+    color: rgb(241, 10, 10);
+}
+
+/* ++++++ TIENDA INICIO ++++++ */ 
+
+.tabla, .sub{
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+.sub {
+    text-align: justify center;
+    justify-content: center;
+    color:rgb(153, 206, 139);
+    text-decoration: underline;
+    font-size: 2em;
+}
+
+.precentacion {
+    width: 25em;
+    padding: 1em;
+    margin: .8em;
+    background-color: rgb(193, 191, 194);
+    box-shadow: 2px 2px 2px rgb(233, 4, 4);
+    table-layout: initial;
+    border-radius: 10px;
+    border-bottom: 10px;
+    justify-content: center;
+}
+.precentacion:hover {
+    box-shadow: 5px 5px 5px 10px;
+    color: rgb(206, 226, 19);
+    transition: box-shadow .4s;
+}
+
+.foto {
+    width: 100%;
+}
+
+.articulo, .genero {
+    width: 100%;
+    text-align: center;
+    margin: 1px;
+    font-size: 25px;
+}
+
+.descripcion {
+    width: 100%;
+    text-align: center;
+    padding: .5em;
+    margin: .5em;
+    font-size: 1.2em;
+}
+
+.precio {
+    text-align: right ;
+    color: black;
+}
+
+/*  ++++++++++++++ SLIDER ++++++++++++++++++++++ */
+
+.container_slide {
+    width: 70%;
+    max-width: 700px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    box-shadow: 0 0 7xp 10px #f9c200;
+
+}
+
+.slider {
+    display: flex;
+    width: 500%;
+    height: 400px;
+    margin-left: -100%;
+}
+
+.slider_section {
+    width: 100%;
+}
+
+.slider_img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.slider_btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(163, 16, 16, 0.7);
+    top: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider_btn:hover {
+    background: #dac50d;
+}
+.slider_btn-left {
+    left: 10px;
+}
+.slider_btn-right {
+    right: 10px;
+}
+
+/*  +++++++++++++++ RESPONSIVE +++++++++++++++ */
+
+
+@media only screen and (max-width:1200px) {
+    body{
+        font-size: 18px;
+    }
+    .cuerpo {
+        width: 100%;
+    }
+    .logan {
+        font-size: 7em;
+    }
+}
+ 
+
+@media only screen and(max-width:900px) {
+    .primeraFila {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .cuerpo {
+        width: 100%;
+    }
+    .nombre {
+        left: 70%;
+    }
+}
+
+@media only screen and(max-width:590px) {
+    .nombre {
+        font-size: 3em;
+    }
+    .cuerpo {
+        width: 100%;
+    }
+}
+
+@media only screen and(max-width:530px) {
+    .nombre {
+        left: 42%;
+        top: 7%;
+        font-size: 1em;
+    }
+    .cuerpo {
+        width: 100%;
+    }
+}
